@@ -4,7 +4,28 @@
 }
 
 body{
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.logo{
     display: flex;
     justify-content: center;
-    
 }
+div,
+.logo{
+    margin: 0;
+    transform: translateX(-48%); /*move para esquerda*/
+}
+
+.cabe-header{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    transform: translateX(-1%);
+} 
