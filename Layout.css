@@ -16,16 +16,30 @@ body{
 div,
 .logo{
     margin: 0;
-    transform: translateX(-48%); /*move para esquerda*/
+    transform: translateX(19%); /*move para esquerda*/
+}
+
+.logo img{
+    display: block !important;
+    width: auto;
+    max-width: 35px;
+    max-height: 34px; 
 }
 
 .cabe-header{
     display: block;
-    width: 90%;
+    width: 101%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2px;
     border: 1px solid black;
     border-radius: 8px;
     background-repeat: no-repeat;
     transform: translateX(-1%);
-} 
+}  
+.cabe-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*Define o tamanho das colunas*/
+    min-height: 3.2rem; /*Define a altura minima de um elemento*/
+    position: relative;
+    padding: 12px;
+}
