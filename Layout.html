@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linkedin</title>
-    <link rel="stylesheet" href="Layout.css">
+    <link rel="stylesheet" href="Cab.css">
+    <link rel="stylesheet" href="Pesquisar.css">
 </head>
 <body>
     <main id="definition">
@@ -14,17 +15,20 @@
             </div> 
             <!--Barra de Pesquisa-->
             <br>
-            <div class="box-search">
-                <div class="busca" id="search">
-                    <form method="post">
-                        <input type="search-text" class="busca-search-input" name="busca" placeholder="pesquisar..." autocomplete="additional-name"> 
-                        <button class="search-btn">
-                            
-                        </button>
-                    </form>
-                </div>
+            <div class="box-search" id="box-search" role="directory" aria-expanded="undefined">
+                <form method="post" action="http://"> <!--Atribui um banco de dados para pesquisa-->
+                    <input type="search-text" class="busca-search-input" name="busca" placeholder="pesquisar..." autocomplete="additional-name"> 
+                    <button id="btn-search">
+                        <i class="Search-icone icon icon-search">
+                            <img src="Search.png">
+                        </i>
+                    </button>
+                </form>
             </div>
         </header>
+        <br>
+        
     </main>
 </body>
 </html>
+
