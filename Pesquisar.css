@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 .box-search{
     display: flex;
     flex-direction: column;
@@ -5,8 +11,8 @@
     border: 1px solid black;
     width: 100% ;
     align-items: center;
-    height: 30px;
-    transform: translateX(-148%); 
+    height: 33px;
+    transform: translateX(-176%); 
 }
 
 .box-search{
@@ -48,7 +54,7 @@
 }
 .busca-search-btn{
     display: flex;
-    border-radius: 70%;
+    border-radius: 100%;
     width: 50px;
     height: 60px;
     background-color: whitesmoke;
@@ -62,3 +68,4 @@
 .Busca-search-btn:active{
     transform: scale(.85);
 }
+
