@@ -43,3 +43,11 @@ div,
     position: relative;
     padding: 12px;
 }
+.Inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: auto;
+    
+}
