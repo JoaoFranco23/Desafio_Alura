@@ -41,7 +41,7 @@
     display: flex;
     border-radius: 30px;
     justify-content: center;
-    height: 37%; 
+    height: 100%; 
 }
 .busca-search-input{
     border: none;
@@ -68,4 +68,3 @@
 .Busca-search-btn:active{
     transform: scale(.85);
 }
-
