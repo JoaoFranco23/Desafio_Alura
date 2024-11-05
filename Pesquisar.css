@@ -42,6 +42,7 @@
     border-radius: 30px;
     justify-content: center;
     height: 100%; 
+    cursor: pointer;
 }
 .busca-search-input{
     border: none;
@@ -58,13 +59,27 @@
     width: 50px;
     height: 60px;
     background-color: whitesmoke;
-    border: none;
+    border: 2px;
     cursor: pointer;
     transition: .3s;
 } 
 .Busca-search-btn{
     display: block !important;
+    align-items: flex-start;
 }
+.btn-search[type="button"]{
+    all: unset;
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 250ms;
+}
+.btn-search[type="button"]:hover{
+    box-shadow: inset 0px -4px 0;
+}
+
 .Busca-search-btn:active{
     transform: scale(.85);
 }
