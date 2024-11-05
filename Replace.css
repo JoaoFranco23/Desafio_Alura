@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+} 
+
+.inicio,
+.inicio-btn{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20%);
+} 
+
+.inicio-btn,
+.inicio{
+    display: flex;
+    transform: translateY(-111%) !important;
+}
+
+.inicio-btn svg{
+    
+}
