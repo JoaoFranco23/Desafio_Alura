@@ -12,11 +12,23 @@
     <br>
     <header class="container" id="container">
         <h1>ENTRAR</h1>
-        <a>Acompanha as novidades profissionais</a>
+        <a>Acompanhe as novidades profissionais</a>
         <br>
         <div class="container-login" id="container-login">
             <script type="text/javascript" src="Usuario.json"></script>
             <form action="#">
+                <div class="e-mail" id="e-mail">
+                    <label class="form_e-mail" id="e-mail">
+                        <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="33" checked="email" aria-activedescendant="email">
+                    </label>
+                </div> 
+                <br>
+                <div class="form-senha" id="senha">
+                    <label class="form-senha" id="senha">
+                        <input type="password" class="senha" name="senha" placeholder="Digite a Sua Senha" pattern="[A-Za-z]{9}" minlength="8" required maxlength="19" aria-activedescendant="senha" checked="senha">
+                    </label>
+                </div>
+                <br>
                 
             </form>
         </div>
