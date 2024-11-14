@@ -14,9 +14,10 @@
         <h1>ENTRAR</h1>
         <a>Acompanhe as novidades profissionais</a>
         <br>
+        <br>
         <div class="container-login" id="container-login">
             <script type="text/javascript" src="Usuario.json"></script>
-            <form action="#">
+            <form action="#" method="post" name="dados" onsubmit="return validaLogin()" id="form"> <!--O Atributo form, fica responsavel por enviar o formulario-->
                 <div class="e-mail" id="e-mail">
                     <label class="form_e-mail" id="e-mail">
                         <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="33" checked="email" aria-activedescendant="email">
@@ -25,20 +26,23 @@
                 <br>
                 <div class="form-senha" id="senha">
                     <label class="form-senha" id="senha">
-                        <input type="password" class="senha" name="senha" placeholder="Digite a Sua Senha" pattern="[A-Za-z]{9}" minlength="8" required maxlength="19" aria-activedescendant="senha" checked="senha">
+                        <input type="password" class="senha" name="senha" placeholder="Digite a Sua Senha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Digite a Senha Correta" minlength="8" required maxlength="19" aria-activedescendant="senha" checked="senha" required>
                     </label>
                 </div>
                 <br>
+                <div class="btn-switch" id="btn-switch">
+                    <input type="checkbox" class="form-switch">
+                    <a>Mantenha-me Conectado</a>
+                </div>
+                <br>
+                <div class="form-button" id="button">
+                    <button type="form-button" class="form-button">
+                        ENTRAR
+                    </button>
+                </div>
             </form>
             <br>
-            <div class="btn-switch" id="btn-switch">
-                <input type="checkbox" class="form-switch">
-                <a>Mantenha-me Conectado</a>
-            </div>
             <br>
-            <div class="form-btn" id="button">
-                
-            </div>
         </div>
     </header>
 </body>
