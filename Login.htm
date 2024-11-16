@@ -22,7 +22,7 @@
                     <label class="form_e-mail" id="e-mail">
                         <input type="email" class="email" name="email" [(ngModel)]="email" placeholder="Email@hotmail.com" pattern="[A-Za-z]{3}+@[@\s]" required maxlength="33" checked="email" aria-activedescendant="email">
                     </label>
-                </div> 
+                </div>
                 <br>
                 <div class="form-senha" id="senha">
                     <label class="form-senha" id="senha">
@@ -32,7 +32,7 @@
                 <br>
                 <div class="remember-password" id="password">
                     <form action="#" method="post" name="password-dados" onsubmit="Rpassword()" id="form">
-                        <a>Esqueci a Senha</a>
+                        <a href="#" onsubmit="senha()">Esqueci a Senha</a>
                     </form>
                 </div>
                 <br>
@@ -42,13 +42,19 @@
                 </div>
                 <br>
                 <div class="form-button" id="button">
-                    <button type="form-button" class="form-button">
+                    <button type="form-button" class="form-button" onsubmit="">
                         ENTRAR
                     </button>
                 </div>
             </form>
             <br>
+            <hr>ENTRAR COM</hr>
             <br>
+            <div class="btn-google" id="btn-google">
+                <a>
+                    <img src="gmail.png" alt="Google" width="25" height="25">
+                </a>
+            </div>
         </div>
     </header>
 </body>
